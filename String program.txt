@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+ 
+int main(){
+	
+	string a,b,c,d;
+	
+	cout<<"\nEnter your name";
+	cin>>a;
+	
+	cout<<"\nEnter your Reg no";
+	cin>>b;
+	
+	cout<<"\nEnter your Father's name";
+	cin>>c;
+	
+	cout<<"\nEnter your age";
+	cin>>d;
+	
+	cout<<a<<endl;
+	cout<<b<<endl;
+	cout<<c<<endl;
+	cout<<d<<endl;
+	
+	return 0;
+}
