@@ -1,0 +1,87 @@
+#include<iostream>
+#include<string>
+#include<algorithm >
+using namespace std;
+
+int main(){
+	string str;
+	//several ways to declare a string 
+//	cin>>str;
+//	cout<<str;
+	
+//	str="apnikaksha";
+//	cout<<str;
+
+//	string str1(5,'a');   //it'll print aaaaa
+//	cout<<str1;
+
+//use of getline funct:
+//	getline(cin, str);
+//	cout<<str;
+	
+//	---------------------------------------------------------------------
+	
+//	appending in string
+//	string str1="fam";
+//	string str2="ily";
+//	cout<<str1+str2<<endl;
+//	cout<<str1.append(str2)<<endl;
+//	cout<<str1<<endl;
+
+
+//	we can access anything through arrays:
+//	cout<<str1[1]<<endl;
+	
+//	use of clear funct which clear the string.	
+//	str1.clear();
+//	cout<<"Your string is here:"<<str1<<endl;
+	
+//	---------------------------------------------------------------------
+	
+//	compare funct:
+	string s1="abc";
+	string s2="xyz";
+	
+	cout<<s2.compare(s1)<<endl;
+	s2=s1;   // s1="abc" s2="abc"
+	cout<<s2.compare(s1)<<endl;
+	if(s2.compare(s1)==0)     //you can write it as (!s2.compare(s1)) its basically mean zero
+	cout<<"Your strings are equal "<<endl;
+	
+//	is your string empty or not.
+	s1.clear();
+	if(s1.empty())
+		cout<<"Your String is empty" << endl;
+		
+//	using of erase function
+	s1="nincompoop";
+	s1.erase(3,3);   //from index number 3 it will remove 3 chars ahead
+	cout<<s1<<endl;
+	
+//------------------------------------------------------------------------------------------------
+
+//	find funct:
+	s1="nincompoop";
+	cout<<s1.find("com")<<endl;   //will print the index no where your finding value starts
+	
+//	insert():
+	s1.insert(3,"lol");
+	cout << s1 << endl;
+	
+//	 to find the size or length use size() or length() functs
+	cout << s1.size() << endl;
+	cout << s1.length() << endl;
+	
+//	to make the substring:
+	s2 = s1.substr(6,3);
+	cout << s2 << endl;
+
+//	to sort the string first include<algorithm>
+	s1 = "ahmeddonhai";
+	sort(s1.begin(),s1.end());
+	cout<<s1<<endl;
+	
+	
+			
+	return 0;
+}
