@@ -1,0 +1,40 @@
+#include<iostream>
+#include<algorithm>
+#include<string>
+using namespace std;
+
+//find the variable occurring max in the string and the how many times is occurring.
+
+
+int main(){
+	string str = "adajdajgdjakgdsaggg";
+	int freq[26];       // array for counting each var in the string
+	
+	for(int i=0; i<26; i++){
+		freq[i] = 0;      //first iniatializing with zero
+	}
+	
+	for (int i=0; i<str.size(); i++){
+		freq[str[i]-'a']++;   //counting each var in the string
+	}
+	
+	int maxf=0;         //how many times the answer occur
+	char ans='a';       //which letter is occuring the most
+	
+	for (int i=0; i<26; i++)
+	{
+		if (freq[i] > maxf){
+			maxf=freq[i];
+			ans=i+'a';
+		}
+	}
+	
+
+		
+	
+	
+	cout << maxf << " " << ans;
+	
+	
+	return 0;
+}
